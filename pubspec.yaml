@@ -1,5 +1,5 @@
 name: gradient_bottom_navbar
-description: "A new Flutter project."
+description: A customizable Flutter bottom navigation bar with gradient-based indicators, smooth transitions, and badge counters for a modern UI experience.
 version: 0.0.1
 homepage: 'https://github.com/piyusshh07/Gradient_Bottom_Navbar.git'
 
