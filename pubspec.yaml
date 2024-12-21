@@ -1,7 +1,7 @@
 name: gradient_bottom_navbar
 description: "A new Flutter project."
 version: 0.0.1
-homepage: 'https://github.com/piyusshh07/Gradient_navbar.git'
+homepage: 'https://github.com/piyusshh07/Gradient_Bottom_Navbar.git'
 
 environment:
   sdk: ^3.5.3
