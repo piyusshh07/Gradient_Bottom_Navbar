@@ -19,71 +19,66 @@ A highly customizable bottom navigation bar with a gradient indicator, animation
 
 Add the following line to your `pubspec.yaml` file:
 
-yaml
+```yaml
 dependencies:
-  gradient_bottom_navbar: ^1.0.0
+  gradient_bottom_navbar: ^0.0.3
+```
 
 Then, run:
 
-bash
-Copy code
-flutter pub get
+```bash
+flutter pub get 
+```
+## Usage
+To use the GradientBottomNavbar in your Flutter app, import the package and set it up as shown below:et.
 
-Usage
-Wrap your app's main screen with the GradientBottomNavbar widget.
-
+```dart
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'gradient_bottom_navbar.dart';
+import 'package:gradient_bottom_navbar/gradient_bottom_navbar.dart'; // Import the package
 
-void main() {
-  runApp(const MyApp());
-}
+// Import your screens
+import 'package:my_app/screens/home_screen.dart';
+import 'package:my_app/screens/browse_screen.dart';
+import 'package:my_app/screens/notifications_screen.dart';
+import 'package:my_app/screens/my_profile_screen.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class BottomNavigation extends StatelessWidget {
+  const BottomNavigation({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: GradientBottomNavbar(
+    return Scaffold(
+      bottomNavigationBar: GradientBottomNavbar(
         items: [
           GradientNavItem(icon: Icons.home, label: 'Home'),
-          GradientNavItem(icon: Icons.search, label: 'Search', counter: 5),
-          GradientNavItem(icon: Icons.settings, label: 'Settings'),
+          GradientNavItem(icon: Icons.search, label: 'Browse'),
+          GradientNavItem(icon: Icons.notifications, label: 'Notifications', counter: 10),
+          GradientNavItem(icon: Icons.person, label: 'My Profile'),
         ],
         screens: [
-          const Center(child: Text('Home Screen')),
-          const Center(child: Text('Search Screen')),
-          const Center(child: Text('Settings Screen')),
+          HomeScreen(),
+          BrowseScreen(),
+          NotificationsScreen(),
+          MyProfileScreen(),
         ],
-        indicatorGradient: const LinearGradient(
-          colors: [Colors.blue, Colors.purple],
-        ),
-        backgroundColor: Colors.white,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.grey,
       ),
     );
   }
 }
 
+```
 
 
-
+## Screenshot
+![WhatsApp Image 2024-12-21 at 8 19 37 PM](https://github.com/user-attachments/assets/d20c49ba-0ed3-4142-b40f-50aba8415843) ![WhatsApp Image 2024-12-21 at 8 19 36 PM](https://github.com/user-attachments/assets/50b1d26a-89e6-4b20-a316-7015d9b56c34)
 ## demo video
 
 ![WhatsAppVideo2024-12-21at8 20 43PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8960c06e-9e04-4ad6-be4b-3fbe7f467b92)
 
-##Screenshot
-![WhatsApp Image 2024-12-21 at 8 19 37 PM](https://github.com/user-attachments/assets/d20c49ba-0ed3-4142-b40f-50aba8415843)
-![WhatsApp Image 2024-12-21 at 8 19 36 PM](https://github.com/user-attachments/assets/50b1d26a-89e6-4b20-a316-7015d9b56c34)
 
 
-
-
-
-GradientBottomNavbar
+## GradientBottomNavbar
 
 | **Property**              | **Type**                     | **Default Value**                           | **Description**                                         |
 |---------------------------|------------------------------|---------------------------------------------|---------------------------------------------------------|
