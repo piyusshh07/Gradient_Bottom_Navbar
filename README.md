@@ -19,7 +19,7 @@ A highly customizable bottom navigation bar with a gradient indicator, animation
 
 Add the following line to your `pubspec.yaml` file:
 
-```yaml
+yaml
 dependencies:
   gradient_bottom_navbar: ^1.0.0
 
@@ -71,13 +71,15 @@ class MyApp extends StatelessWidget {
 
 
 
-## Screenshot
+## demo video
 
-![Gradient Bottom Navbar](assets/images/screenshot.png)
+![WhatsAppVideo2024-12-21at8 20 43PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8960c06e-9e04-4ad6-be4b-3fbe7f467b92)
 
-![Gradient Bottom Navbar](assets/images/screenshot2.png)
+##Screenshot
+![WhatsApp Image 2024-12-21 at 8 19 37 PM](https://github.com/user-attachments/assets/d20c49ba-0ed3-4142-b40f-50aba8415843)
+![WhatsApp Image 2024-12-21 at 8 19 36 PM](https://github.com/user-attachments/assets/50b1d26a-89e6-4b20-a316-7015d9b56c34)
 
-![Demo](assets/images/demo.gif)
+
 
 
 
